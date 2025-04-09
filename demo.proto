@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "github.com/demo-grpc/demo";
+
+message CreateRequest {
+    string message = 1;
+}
+
+message CreateResponse {
+    string message = 1;
+}
+
+service Demo {
+    rpc Create(CreateRequest) returns (CreateResponse);
+    rpc Check(CreateRequest) returns (CreateResponse);
+}
