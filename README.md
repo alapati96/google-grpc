@@ -8,5 +8,5 @@ Commands:
 2. go run main.go // Listens on port 9000 for requests.
 Optional:
 3. sh build.sh // creates a binary of this sample service
-4. docker tag <name> <image-name>
-5. docker push <image-name>
+4. docker tag name image-name
+5. docker push image-name
